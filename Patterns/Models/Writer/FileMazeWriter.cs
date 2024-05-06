@@ -4,7 +4,7 @@ namespace MazePrinter;
 
 public class FileMazeWriter : MazeWriter
 {
-    public FileMazeWriter(IMaze maze, TextWriter writer) : base(maze, writer)
+    public FileMazeWriter(IMaze maze, TextWriter writer, IMazeFormatter formatter) : base(maze, writer, formatter)
     {
     }
 

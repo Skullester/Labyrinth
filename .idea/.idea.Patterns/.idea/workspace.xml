@@ -7,7 +7,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a88c4893-3548-45ae-8733-d367d5e8564c" name="Changes" comment="" />
+    <list default="true" id="a88c4893-3548-45ae-8733-d367d5e8564c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Patterns/Interfaces/IMazeFormatter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/Models/Maze/Player.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/Models/Writer/DefaultMazeFormatter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/Models/Writer/Writer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Patterns/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Patterns/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Interfaces/MazeWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Interfaces/MazeWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Models/ConsoleMazeWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Models/Writer/ConsoleMazeWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Models/FileMazeWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Models/Writer/FileMazeWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Models/Printer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/Labyrinth.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/Labyrinth.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/Patterns.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/Patterns.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/Patterns.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/Patterns.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ref/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ref/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/refint/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/refint/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Infrastracture/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Infrastracture/Extensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Models/ExternalWall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Models/Maze/ExternalWall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Models/InternalWall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Models/Maze/InternalWall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Models/RectangularMaze.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Models/Maze/RectangularMaze.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Models/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Models/Maze/Room.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Models/RoomWithSpikes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Models/Maze/RoomWithSpikes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/bin/Debug/net8.0/Patterns.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/bin/Debug/net8.0/Patterns.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/bin/Debug/net8.0/Patterns.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/bin/Debug/net8.0/Patterns.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/ref/Patterns.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/ref/Patterns.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/refint/Patterns.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/refint/Patterns.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject1/bin/Debug/net8.0/CoverletSourceRootsMapping_TestProject1" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1/bin/Debug/net8.0/CoverletSourceRootsMapping_TestProject1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject1/obj/Debug/net8.0/TestProject1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1/obj/Debug/net8.0/TestProject1.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject1/obj/Debug/net8.0/TestProject1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1/obj/Debug/net8.0/TestProject1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject1/obj/Debug/net8.0/TestProject1.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1/obj/Debug/net8.0/TestProject1.csproj.AssemblyReference.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +62,9 @@
   </component>
   <component name="DpaMonitoringSettings">
     <option name="autoShow" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/9f4b1f5d664afdfc80e1508ab7ed099dff210fbd/src/coreclr/System.Private.CoreLib/src/System/Array.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
@@ -67,7 +117,7 @@
     <setting file="file://$PROJECT_DIR$/Patterns/Models/RectangularMaze.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="SWEA" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -83,6 +133,7 @@
     ".NET Project.ConsoleApp1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "b0dcebb8-0256-4550-a8d6-cf767d69af55.executor": "Run",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "P:/",
     "node.js.detected.package.eslint": "true",
@@ -136,6 +187,9 @@
       <workItem from="1714841030516" duration="24800000" />
       <workItem from="1714905093852" duration="1223000" />
       <workItem from="1714906391404" duration="32053000" />
+      <workItem from="1714993931595" duration="366000" />
+      <workItem from="1715011139670" duration="8028000" />
+      <workItem from="1715019267387" duration="7558000" />
     </task>
     <servers />
   </component>
@@ -150,17 +204,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Patterns/Infrastracture/Extensions.cs</url>
-          <line>24</line>
-          <properties documentPath="P:\VS Projects\Patterns\ConsoleApp1\Infrastracture\Extensions.cs" containingFunctionPresentation="Method 'ParseToChar'">
+          <url>file://$PROJECT_DIR$/Patterns/Models/Maze/RectangularMaze.cs</url>
+          <line>60</line>
+          <properties documentPath="P:\VS Projects\Patterns\Patterns\Models\Maze\RectangularMaze.cs" containingFunctionPresentation="Method 'InitializeObjects'">
             <startOffsets>
-              <option value="906" />
+              <option value="1506" />
             </startOffsets>
             <endOffsets>
-              <option value="933" />
+              <option value="1546" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

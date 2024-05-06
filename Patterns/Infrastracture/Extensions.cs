@@ -10,6 +10,7 @@ public static class Extensions
         return (arr[0], arr[1]);
     }
 
+    /*
     public static (int, int) GetIndexesOfBorderElement<T>(this T[,] array, Random? rand = default)
     {
         rand ??= new Random();
@@ -29,18 +30,13 @@ public static class Extensions
 
         return (i, j);
     }
-    
-    public static IEnumerable<char> ParseToChar(this IEnumerable<IMazeElement> elements)
+    */
+
+    public static IEnumerable<char> ParseToChar(this IEnumerable<IMazeElement> elements, IMazeFormatter formatter)
     {
         foreach (var element in elements)
         {
-            yield return element switch
-            {
-                Room => ' ',
-                ExternalWall => '#',
-                RoomWithSpikes => 'x',
-                _ => '*'
-            };
+            yield return formatter.Format(element);
         }
     }
 }

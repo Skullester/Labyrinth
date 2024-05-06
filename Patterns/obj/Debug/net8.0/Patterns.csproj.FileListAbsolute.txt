@@ -9,3 +9,4 @@ P:\VS Projects\Patterns\Patterns\obj\Debug\net8.0\Patterns.dll
 P:\VS Projects\Patterns\Patterns\obj\Debug\net8.0\refint\Patterns.dll
 P:\VS Projects\Patterns\Patterns\obj\Debug\net8.0\Patterns.pdb
 P:\VS Projects\Patterns\Patterns\obj\Debug\net8.0\ref\Patterns.dll
+P:\VS Projects\Patterns\Patterns\obj\Debug\net8.0\Patterns.sourcelink.json

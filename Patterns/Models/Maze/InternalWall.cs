@@ -20,4 +20,9 @@ public class InternalWall : IWall
     }
 
     public IWall Clone() => (MemberwiseClone() as InternalWall)!;
+
+    public override string ToString()
+    {
+        return "*";
+    }
 }

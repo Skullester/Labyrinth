@@ -10,20 +10,20 @@ class Program
     {
         var (length, width) = InputMazeParameters();
         var maze = RectangularMaze.GetMaze(length, width);
-        RegisterPrinters(maze);
+        RegisterPrinters(maze, new DefaultMazeFormatter());
         var printer = GetMazeWriter(maze);
         printer.Print();
         PrintWithColor("Запись завершена!", ConsoleColor.White);
         Console.ReadKey();
     }
 
-    private static void RegisterPrinters(IMaze maze)
+    private static void RegisterPrinters(IMaze maze, IMazeFormatter formatter)
     {
         printers = new()
         {
-            new ConsoleMazeWriter(maze, Console.Out),
-            new FileMazeWriter(maze, new StreamWriter("Labyrinth.txt")),
-            //new Printer(maze, Console.Out),
+            new ConsoleMazeWriter(maze, Console.Out, formatter),
+            new FileMazeWriter(maze, new StreamWriter("Labyrinth.txt"), formatter),
+            new Writer(maze, Console.Out, formatter),
         };
     }
 
@@ -52,7 +52,7 @@ class Program
     private static (int, int) InputMazeParameters()
     {
         var example = "\nПример: 5 2";
-        PrintWithColor($"Введите длину и ширину лабиринта: {example}", ConsoleColor.Green);
+        PrintWithColor($"Введите размеры лабиринта: {example}", ConsoleColor.Green);
         SetConsoleColor(ConsoleColor.Yellow);
         string[]? input;
         do
