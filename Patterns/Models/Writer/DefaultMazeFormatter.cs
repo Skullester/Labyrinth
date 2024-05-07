@@ -4,6 +4,10 @@ namespace MazePrinter;
 
 public class DefaultMazeFormatter : IMazeFormatter
 {
+    public string Name => "Стандартный";
+    public IReadOnlyList<char> symbols => symbolsArr.AsReadOnly();
+    private readonly char[] symbolsArr = [' ', '#', '*', 'x', 'p'];
+
     public char Format(IMazeElement element)
     {
         return element switch
@@ -12,7 +16,8 @@ public class DefaultMazeFormatter : IMazeFormatter
             ExternalWall => '#',
             InternalWall => '*',
             RoomWithSpikes => 'x',
-            _ => 'p',
+            Player => 'p',
+            _ => '?',
         };
     }
 }

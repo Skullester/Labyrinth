@@ -55,11 +55,11 @@ public class RectangularMaze : IMaze
 
     private void InitializeObjects()
     {
-        var rand = new Random();
+        /*var rand = new Random();
         int i = 1, j = 1; //rand.Next(1, Length);
         Elements[i, j] = new Player();
         var stack = new Stack<(int i, int j)>();
-        RoomCreator[] fabric = [new DefaultRoomCreator() /*, new RoomSpikesCreator()*/];
+        RoomCreator[] fabric = [new DefaultRoomCreator() /*, new RoomSpikesCreator()#1#];
         var coords = (i, j);
         do
         {
@@ -78,7 +78,7 @@ public class RectangularMaze : IMaze
                 var index = rand.Next(fabric.Length);
                 this[i, j] = fabric[index].CreateRoom();
             }
-        } while (stack.Count > 0);
+        } while (stack.Count > 0);*/
     }
 
     public static RectangularMaze GetMaze(int length, int width)

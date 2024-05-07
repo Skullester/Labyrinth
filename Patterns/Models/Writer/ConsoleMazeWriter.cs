@@ -10,11 +10,11 @@ public class ConsoleMazeWriter : MazeWriter
     {
     }
 
-    protected override void Print(char sym)
+    public override string Name => "Консоль";
+
+    protected override void Write(char sym)
     {
         writer.Write(sym);
         Thread.Sleep(TimeSpan.FromMilliseconds(milliSeconds));
     }
-
-    public override string GetDescription() => "Консоль";
 }

@@ -8,11 +8,11 @@ public class FileMazeWriter : MazeWriter
     {
     }
 
-    protected override void Print(char sym)
+    public override string Name => "Файл";
+
+    protected override void Write(char sym)
     {
         writer.Write(sym);
         writer.Flush();
     }
-
-    public override string GetDescription() => "Файл";
 }

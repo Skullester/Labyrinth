@@ -4,22 +4,56 @@ namespace MazePrinter;
 
 class Program
 {
-    private static List<MazeWriter>? printers;
+    private static List<MazeWriter> writers = null!;
+    private static List<IMazeFormatter> formatters = null!;
 
     static void Main()
     {
+        RegisterFormatters();
         var (length, width) = InputMazeParameters();
         var maze = RectangularMaze.GetMaze(length, width);
-        RegisterPrinters(maze, new DefaultMazeFormatter());
-        var printer = GetMazeWriter(maze);
-        printer.Print();
-        PrintWithColor("Запись завершена!", ConsoleColor.White);
+        var formatter = GetMazeFormatter();
+        RegisterWriters(maze, formatter);
+        var writer = GetMazeWriter();
+        writer.Write();
+        PrintLineWithColor("Запись завершена!", ConsoleColor.White);
         Console.ReadKey();
     }
 
-    private static void RegisterPrinters(IMaze maze, IMazeFormatter formatter)
+    private static void RegisterFormatters()
     {
-        printers = new()
+        formatters = [new DefaultMazeFormatter(), new WeirdFormatter()];
+    }
+
+    private static IMazeFormatter GetMazeFormatter()
+    {
+        PrintLineWithColor("Выберите способ вывода лабиринта: ", ConsoleColor.White);
+        SetConsoleColor(ConsoleColor.Yellow);
+
+        foreach (var format in formatters)
+        {
+            var newSymbols = format.symbols.Select(x => $"'{x}'");
+            var symbols = string.Join(" | ", newSymbols);
+            PrintLine($"{format.Name}: {symbols}");
+        }
+
+        return FindNamingElementByInput(formatters, "Такого способа вывода не существует");
+    }
+
+    private static MazeWriter GetMazeWriter()
+    {
+        PrintLineWithColor("Куда произвести запись?", ConsoleColor.White);
+        var names = writers.Select(x => x.Name);
+        SetConsoleColor(ConsoleColor.Yellow);
+        PrintLine(string.Join(" | ", names));
+        var writer = FindNamingElementByInput(writers, "Такого вида записи не существует");
+        PrintLineWithColor($"Происходит запись на {writer.Name}...", ConsoleColor.White);
+        return writer;
+    }
+
+    private static void RegisterWriters(IMaze maze, IMazeFormatter formatter)
+    {
+        writers = new()
         {
             new ConsoleMazeWriter(maze, Console.Out, formatter),
             new FileMazeWriter(maze, new StreamWriter("Labyrinth.txt"), formatter),
@@ -27,33 +61,28 @@ class Program
         };
     }
 
-    private static MazeWriter GetMazeWriter(IMaze maze)
+    private static T FindNamingElementByInput<T>(IEnumerable<T> collection, string errorMessage) where T : INaming
     {
-        PrintLine("Куда произвести запись?");
-        var names = printers!.Select(x => x.GetDescription());
-        PrintLine(string.Join(" | ", names));
-
+        SetConsoleColor(ConsoleColor.Cyan);
         string input;
-        MazeWriter? mazePrinter;
-        var isError = false;
+        T element;
+        bool isError;
         do
         {
             input = Console.ReadLine()!;
-            mazePrinter = printers
-                .FirstOrDefault(x => x.GetDescription().StartsWith(input, StringComparison.OrdinalIgnoreCase));
-            isError = mazePrinter is null;
-            if (isError) PrintError("Такого вида записи не существует");
+            element = collection
+                .FirstOrDefault(x => x.Name.StartsWith(input, StringComparison.OrdinalIgnoreCase));
+            isError = element is null;
+            if (isError) PrintError(errorMessage);
         } while (isError);
 
-        PrintWithColor($"Происходит запись на {mazePrinter!.GetDescription()}...", ConsoleColor.White);
-        return mazePrinter;
+        return element!;
     }
 
     private static (int, int) InputMazeParameters()
     {
-        var example = "\nПример: 5 2";
-        PrintWithColor($"Введите размеры лабиринта: {example}", ConsoleColor.Green);
-        SetConsoleColor(ConsoleColor.Yellow);
+        PrintLineWithColor($"Введите размеры лабиринта: \nПример: 5 2", ConsoleColor.White);
+        SetConsoleColor(ConsoleColor.Cyan);
         string[]? input;
         do
         {
@@ -79,14 +108,15 @@ class Program
         Console.ForegroundColor = color;
     }
 
-    private static void PrintWithColor(string text, ConsoleColor newColor)
+    private static void PrintLineWithColor(string text, ConsoleColor newColor, bool saveOldColor = true)
     {
         var color = Console.ForegroundColor;
         SetConsoleColor(newColor);
         PrintLine(text);
-        SetConsoleColor(color);
+        if (saveOldColor)
+            SetConsoleColor(color);
     }
 
     private static void PrintLine(string text) => Console.WriteLine(text);
-    private static void PrintError(string text) => PrintWithColor(text, ConsoleColor.Red);
+    private static void PrintError(string text) => PrintLineWithColor(text, ConsoleColor.Red);
 }

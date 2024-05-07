@@ -8,13 +8,10 @@ public class Writer : MazeWriter //заглушка
     {
     }
 
-    protected override void Print(char sym)
+    public override string Name => "Заглушка";
+
+    protected override void Write(char sym)
     {
         Console.WriteLine("print");
-    }
-
-    public override string GetDescription()
-    {
-        return "lexa";
     }
 }

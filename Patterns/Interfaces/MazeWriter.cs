@@ -2,9 +2,10 @@
 
 namespace MazePrinter;
 
-public abstract class MazeWriter
+public abstract class MazeWriter : INaming
 {
     private readonly IMaze maze;
+    public abstract string Name { get; }
     protected readonly TextWriter writer;
     private readonly IMazeFormatter mazeFormatter;
 
@@ -16,20 +17,19 @@ public abstract class MazeWriter
         this.mazeFormatter = mazeFormatter;
     }
 
-    public void Print()
+    public void Write()
     {
         var counter = 1;
         var chars = maze.ParseToChar(mazeFormatter);
         foreach (var item in chars)
         {
-            Print(item);
+            Write(item);
             if (counter++ % maze.Length == 0)
-                Print('\n');
+                Write('\n');
         }
 
         writer.Close();
     }
 
-    protected abstract void Print(char sym);
-    public abstract string GetDescription();
+    protected abstract void Write(char sym);
 }
