@@ -82,21 +82,21 @@ class Program
             element = collection
                 .FirstOrDefault(x => x.Name.StartsWith(input, StringComparison.OrdinalIgnoreCase));
             isError = element is null || string.IsNullOrWhiteSpace(input);
-        } while (CheckForError(isError, errorMessage));
+        } while (CheckError(isError, errorMessage));
 
         return element!;
     }
 
-    private static bool CheckForError(bool condition, string errorMsg)
+    private static bool CheckError(bool condition, string errorMessage)
     {
         if (condition)
-            PrintError(errorMsg);
+            PrintError(errorMessage);
         return condition;
     }
 
     private static (int, int) InputMazeParameters()
     {
-        PrintLineWithColor($"Введите размеры лабиринта: \nПример: 5 2", ConsoleColor.White);
+        PrintLineWithColor($"Введите высоту и ширину лабиринта: \nПример: 5 2", ConsoleColor.White);
         SetConsoleColor(ConsoleColor.Cyan);
         string[]? input;
         do
@@ -113,7 +113,7 @@ class Program
     private static bool CheckInput(string[]? input)
     {
         var isIncorrect = string.IsNullOrWhiteSpace(input?[0]) || input.Length != 2;
-        return CheckForError(isIncorrect, "Ошибка! Введите данные по примеру");
+        return CheckError(isIncorrect, "Ошибка! Введите данные по примеру");
     }
 
     private static void SetConsoleColor(ConsoleColor color) => Console.ForegroundColor = color;

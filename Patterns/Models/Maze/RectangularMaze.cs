@@ -46,7 +46,6 @@ public class RectangularMaze : IMaze
         var startY = rand.Next(1, Height);
         var startPoint = new Point(startX, startY);
         var currentPoint = startPoint;
-        const int nextNeigbour = 2;
         var stack = new Stack<Point>();
         do
         {
@@ -55,12 +54,10 @@ public class RectangularMaze : IMaze
             var y = currentPoint.Y;
             this[x, y] = fabric[0].CreateRoom();
             this[x, y].IsVisited = true;
-            if (x > 1 && !Elements[x - nextNeigbour, y].IsVisited) neighbours.Add(new Point(x - nextNeigbour, y));
-            if (y > 1 && !Elements[x, y - nextNeigbour].IsVisited) neighbours.Add(new Point(x, y - nextNeigbour));
-            if (x < Width - 3 && !Elements[x + nextNeigbour, y].IsVisited)
-                neighbours.Add(new Point(x + nextNeigbour, y));
-            if (y < Height - 3 && !Elements[x, y + nextNeigbour].IsVisited)
-                neighbours.Add(new Point(x, y + nextNeigbour));
+            if (x > 2 && !Elements[x - 2, y].IsVisited) neighbours.Add(new Point(x - 2, y));
+            if (y > 2 && !Elements[x, y - 2].IsVisited) neighbours.Add(new Point(x, y - 2));
+            if (x < Height - 3 && !Elements[x + 2, y].IsVisited) neighbours.Add(new Point(x + 2, y));
+            if (y < Width - 3 && !Elements[x, y + 2].IsVisited) neighbours.Add(new Point(x, y + 2));
 
             if (neighbours.Count > 0)
             {
@@ -72,7 +69,7 @@ public class RectangularMaze : IMaze
             else currentPoint = stack.Pop();
         } while (stack.Count > 0);
 
-        Elements[startPoint.X, startPoint.Y] = new Player();
+        Elements[currentPoint.X, currentPoint.Y] = new Player();
     }
 
     private void RemoveWall(Point a, Point b)
