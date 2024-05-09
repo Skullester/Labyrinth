@@ -24,7 +24,7 @@ public abstract class MazeWriter : INaming
         foreach (var item in chars)
         {
             Write(item);
-            if (counter++ % maze.Length == 0)
+            if (counter++ % maze.Height == 0)
                 Write('\n');
         }
 

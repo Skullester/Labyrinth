@@ -25,4 +25,6 @@ public class InternalWall : IWall
     {
         return "*";
     }
+
+    public bool IsVisited { get; set; }
 }

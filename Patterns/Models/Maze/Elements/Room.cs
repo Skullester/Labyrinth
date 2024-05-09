@@ -8,4 +8,6 @@ public class Room : IRoom
     {
         return " ";
     }
+
+    public bool IsVisited { get; set; }
 }

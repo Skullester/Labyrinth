@@ -2,4 +2,5 @@
 
 public interface IMazeElement
 {
+    bool IsVisited { get; set; }
 }

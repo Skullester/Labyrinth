@@ -1,52 +1,38 @@
 ﻿using System.Collections;
+using System.Drawing;
 
 namespace Patterns;
 
 public class RectangularMaze : IMaze
 {
-    public int Length { get; }
+    public int Height { get; }
     public int Width { get; }
     private static RectangularMaze? maze;
 
     public IMazeElement[,] Elements { get; private set; } = null!;
 
-    private RectangularMaze(int length, int width)
+    private RectangularMaze(int height, int width)
     {
-        Length = length;
+        Height = height;
         Width = width;
         InitializeExternalWalls();
         InitializeObjects();
     }
 
-    private (int, int) GetNextStepIndexes(Direction direction, (int i, int j) currentIndexies)
-    {
-        var i = currentIndexies.i;
-        var j = currentIndexies.j;
-        return direction switch
-        {
-            Direction.Right => (i, ++j),
-            Direction.Down => (++i, j),
-            Direction.Left => (i, --j),
-            _ => (--i, j)
-        };
-    }
-
-    private enum Direction
-    {
-        Right,
-        Down,
-        Left,
-        Up
-    }
+    private RoomCreator[] fabric =
+    [
+        new DefaultRoomCreator(),
+        // new RoomSpikesCreator()
+    ];
 
     private void InitializeExternalWalls()
     {
-        Elements = new IMazeElement[Width, Length];
-        for (var i = 0; i < Width; i++)
+        Elements = new IMazeElement[Height, Width];
+        for (var i = 0; i < Height; i++)
         {
-            for (var j = 0; j < Length; j++)
+            for (var j = 0; j < Width; j++)
             {
-                if (i == 0 || i == Width - 1 || j == 0 || j == Length - 1)
+                if (i == 0 || i == Height - 1 || j == 0 || j == Width - 1)
                     this[i, j] = new ExternalWall();
                 else this[i, j] = new InternalWall(100);
             }
@@ -55,35 +41,63 @@ public class RectangularMaze : IMaze
 
     private void InitializeObjects()
     {
-        /*var rand = new Random();
-        int i = 1, j = 1; //rand.Next(1, Length);
-        Elements[i, j] = new Player();
-        var stack = new Stack<(int i, int j)>();
-        RoomCreator[] fabric = [new DefaultRoomCreator() /*, new RoomSpikesCreator()#1#];
-        var coords = (i, j);
+        var rand = new Random();
+        var startX = rand.Next(1, Width);
+        var startY = rand.Next(1, Height);
+        var startPoint = new Point(startX, startY);
+        var currentPoint = startPoint;
+        const int nextNeigbour = 2;
+        var stack = new Stack<Point>();
         do
         {
-            var direction = (Direction)rand.Next(4);
-            coords = GetNextStepIndexes(direction, coords);
-            i = coords.i;
-            j = coords.j;
-            var nextStep = this[i, j];
-            if (nextStep is ExternalWall or IRoom or Player)
+            var neighbours = new List<Point>();
+            var x = currentPoint.X;
+            var y = currentPoint.Y;
+            this[x, y] = fabric[0].CreateRoom();
+            this[x, y].IsVisited = true;
+            if (x > 1 && !Elements[x - nextNeigbour, y].IsVisited) neighbours.Add(new Point(x - nextNeigbour, y));
+            if (y > 1 && !Elements[x, y - nextNeigbour].IsVisited) neighbours.Add(new Point(x, y - nextNeigbour));
+            if (x < Width - 3 && !Elements[x + nextNeigbour, y].IsVisited)
+                neighbours.Add(new Point(x + nextNeigbour, y));
+            if (y < Height - 3 && !Elements[x, y + nextNeigbour].IsVisited)
+                neighbours.Add(new Point(x, y + nextNeigbour));
+
+            if (neighbours.Count > 0)
             {
-                coords = stack.Pop();
+                var chosenPoint = neighbours[rand.Next(neighbours.Count)];
+                RemoveWall(currentPoint, chosenPoint);
+                stack.Push(chosenPoint);
+                currentPoint = chosenPoint;
             }
-            else
-            {
-                stack.Push(coords);
-                var index = rand.Next(fabric.Length);
-                this[i, j] = fabric[index].CreateRoom();
-            }
-        } while (stack.Count > 0);*/
+            else currentPoint = stack.Pop();
+        } while (stack.Count > 0);
+
+        Elements[startPoint.X, startPoint.Y] = new Player();
     }
 
-    public static RectangularMaze GetMaze(int length, int width)
+    private void RemoveWall(Point a, Point b)
     {
-        maze ??= new RectangularMaze(length, width);
+        Point point;
+        if (a.X == b.X)
+        {
+            if (a.Y < b.Y)
+                point = new Point(a.X, a.Y + 1);
+            else point = new Point(a.X, a.Y - 1);
+        }
+        else
+        {
+            if (a.X < b.X)
+                point = new Point(a.X + 1, a.Y);
+            else point = new Point(a.X - 1, a.Y);
+        }
+
+        this[point.X, point.Y] = fabric[0].CreateRoom();
+        this[point.X, point.Y].IsVisited = true;
+    }
+
+    public static RectangularMaze GetMaze(int height, int width)
+    {
+        maze ??= new RectangularMaze(height, width);
         return maze;
     }
 
@@ -93,14 +107,10 @@ public class RectangularMaze : IMaze
         private set => Elements[i, j] = value;
     }
 
-
     public IEnumerator<IMazeElement> GetEnumerator()
     {
         return Elements.Cast<IMazeElement>().GetEnumerator();
     }
 
-    IEnumerator IEnumerable.GetEnumerator()
-    {
-        return GetEnumerator();
-    }
+    IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 }

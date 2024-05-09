@@ -8,4 +8,6 @@ public class ExternalWall : IWall
     {
         return "#";
     }
+
+    public bool IsVisited { get; set; }
 }

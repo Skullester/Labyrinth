@@ -2,7 +2,7 @@
 
 namespace MazePrinter;
 
-public class WeirdFormatter : IMazeFormatter
+public class WeirdMazeFormatter : IMazeFormatter
 {
     public string Name => "Нестандартный";
     public IReadOnlyList<char> symbols => symbolsArr.AsReadOnly();
@@ -12,11 +12,11 @@ public class WeirdFormatter : IMazeFormatter
     {
         return element switch
         {
-            Room => '$',
-            ExternalWall => '@',
-            InternalWall => '!',
+            Room => '~',
+            ExternalWall => '%',
+            InternalWall => '@',
             RoomWithSpikes => ')',
-            Player => '(',
+            Player => '*',
             _ => '?',
         };
     }

@@ -2,7 +2,7 @@
 
 public class Player : IMazeElement
 {
-    public int AppleCount { get; set; }
+    public bool IsVisited { get; set; }
 
     public override string ToString()
     {

@@ -4,7 +4,7 @@ namespace MazePrinter;
 
 public class ConsoleMazeWriter : MazeWriter
 {
-    private const double milliSeconds = 0;
+    private const double milliSeconds = 0.8;
 
     public ConsoleMazeWriter(IMaze maze, TextWriter writer, IMazeFormatter formatter) : base(maze, writer, formatter)
     {
