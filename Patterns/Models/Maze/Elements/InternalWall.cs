@@ -2,6 +2,8 @@
 
 public class InternalWall : IWall
 {
+    public bool IsVisited { get; set; }
+    public int Distance { get; set; }
     private float durability;
 
     public float Durability
@@ -20,11 +22,4 @@ public class InternalWall : IWall
     }
 
     public IWall Clone() => (MemberwiseClone() as InternalWall)!;
-
-    public override string ToString()
-    {
-        return "*";
-    }
-
-    public bool IsVisited { get; set; }
 }

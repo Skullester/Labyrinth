@@ -6,7 +6,7 @@ public class WeirdMazeFormatter : IMazeFormatter
 {
     public string Name => "Нестандартный";
     public IReadOnlyList<char> symbols => symbolsArr.AsReadOnly();
-    private readonly char[] symbolsArr = ['~', '%', '@', ')', '*'];
+    private readonly char[] symbolsArr = ['~', '%', '@', '=', '*'];
 
     public char Format(IMazeElement element)
     {
@@ -15,7 +15,7 @@ public class WeirdMazeFormatter : IMazeFormatter
             Room => '~',
             ExternalWall => '%',
             InternalWall => '@',
-            RoomWithSpikes => ')',
+            ExitRoom => '=',
             Player => '*',
             _ => '?',
         };

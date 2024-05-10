@@ -6,17 +6,17 @@ public class DefaultMazeFormatter : IMazeFormatter
 {
     public string Name => "Стандартный";
     public IReadOnlyList<char> symbols => symbolsArr.AsReadOnly();
-    private readonly char[] symbolsArr = [' ', '#', '*', 'x', 'p'];
+    private readonly char[] symbolsArr = [' ', '#', '*', 'Q', 'P'];
 
     public char Format(IMazeElement element)
     {
         return element switch
         {
-            Room => ' ',
+            Room or ExitRoom => ' ',
             ExternalWall => '#',
             InternalWall => '*',
-            RoomWithSpikes => 'x',
-            Player => 'p',
+            // ExitRoom => 'Q',
+            Player => 'P',
             _ => '?',
         };
     }

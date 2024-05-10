@@ -96,7 +96,7 @@ class Program
 
     private static (int, int) InputMazeParameters()
     {
-        PrintLineWithColor($"Введите высоту и ширину лабиринта: \nПример: 5 2", ConsoleColor.White);
+        PrintLineWithColor($"Введите высоту и ширину лабиринта: \nПример: 15 5", ConsoleColor.White);
         SetConsoleColor(ConsoleColor.Cyan);
         string[]? input;
         do

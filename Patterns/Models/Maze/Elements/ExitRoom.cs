@@ -1,6 +1,6 @@
 ﻿namespace Patterns;
 
-public class RoomWithSpikes : IRoom
+public class ExitRoom : IRoom
 {
     public bool IsVisited { get; set; }
     public int Distance { get; set; }
