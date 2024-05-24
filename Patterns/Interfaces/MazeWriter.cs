@@ -19,12 +19,12 @@ public abstract class MazeWriter : INaming
 
     public void Write()
     {
-        var counter = 1;
+        var counter = 0;
         var chars = maze.ParseToChar(mazeFormatter);
         foreach (var item in chars)
         {
             Write(item);
-            if (counter++ % maze.Width == 0)
+            if (++counter % maze.Width == 0)
                 Write('\n');
         }
 
