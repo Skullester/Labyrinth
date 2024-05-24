@@ -76,7 +76,7 @@ public class RectangularMaze : IMaze
         Point[] startPositions =
         [
             new Point(1, 1),
-            new Point(Height - 2, 1),
+            new Point(Height - 2, 1),   
             new Point(1, Width - 2),
             new Point(Height - 2, Width - 2)
         ];
