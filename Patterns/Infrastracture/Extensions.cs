@@ -12,9 +12,6 @@ public static class Extensions
 
     public static IEnumerable<char> ParseToChar(this IEnumerable<IMazeElement> elements, IMazeFormatter formatter)
     {
-        foreach (var element in elements)
-        {
-            yield return formatter.Format(element);
-        }
+        return elements.Select(element => formatter.Format(element));
     }
 }

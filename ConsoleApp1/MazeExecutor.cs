@@ -41,7 +41,7 @@ class MazeExecutor
 
         foreach (var format in formatters)
         {
-            var newSymbols = format.symbols.Select(x => $"'{x}'");
+            var newSymbols = format.Symbols.Select(x => $"'{x}'");
             var symbols = string.Join(" | ", newSymbols);
             PrintLine($"{format.Name}: {symbols}");
         }

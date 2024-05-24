@@ -4,6 +4,6 @@ namespace MazePrinter;
 
 public interface IMazeFormatter : INaming
 {
-    IReadOnlyList<char> symbols { get; }
+    IReadOnlyList<char> Symbols { get; }
     char Format(IMazeElement element);
 }

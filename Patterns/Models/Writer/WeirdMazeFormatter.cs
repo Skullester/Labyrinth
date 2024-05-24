@@ -5,7 +5,7 @@ namespace MazePrinter;
 public class WeirdMazeFormatter : IMazeFormatter
 {
     public string Name => "Нестандартный";
-    public IReadOnlyList<char> symbols => symbolsArr.AsReadOnly();
+    public IReadOnlyList<char> Symbols => symbolsArr.AsReadOnly();
     private readonly char[] symbolsArr = ['~', '%', '@', '=', '*'];
 
     public char Format(IMazeElement element)
