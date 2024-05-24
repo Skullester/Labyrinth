@@ -15,7 +15,6 @@ public class RectangularMaze : IMaze
     [
         new DefaultRoomCreator(),
         new ExitRoomCreator(),
-        // new RoomSpikesCreator()
     ];
 
     private RectangularMaze(int height, int width)
@@ -57,13 +56,15 @@ public class RectangularMaze : IMaze
     private void InitializeExternalWalls()
     {
         Elements = new IMazeElement[Height, Width];
+        var exWall = new ExternalWall();
+        var inWall = new InternalWall(100);
         for (var i = 0; i < Height; i++)
         {
             for (var j = 0; j < Width; j++)
             {
                 if (i == 0 || i == Height - 1 || j == 0 || j == Width - 1)
-                    this[i, j] = new ExternalWall();
-                else this[i, j] = new InternalWall(100);
+                    this[i, j] = exWall.Clone();
+                else this[i, j] = inWall.Clone();
             }
         }
     }
@@ -80,11 +81,6 @@ public class RectangularMaze : IMaze
             new Point(Height - 2, Width - 2)
         ];
         var startPoint = startPositions[rand.Next(0, startPositions.Length)];
-        /*
-        var startPointX = rand.Next(1, Height - 1);
-        var startPointY = rand.Next(1, Width - 1);
-        var startPoint = new Point(startPointX, startPointY);
-        */
         var currentPoint = startPoint;
         var stack = new Stack<Point>();
         do
