@@ -11,7 +11,7 @@ public class RectangularMaze : IMaze
 
     public IMazeElement[,] Elements { get; private set; } = null!;
 
-    private RoomCreator[] fabric =
+    private readonly RoomCreator[] fabric =
     [
         new DefaultRoomCreator(),
         new ExitRoomCreator(),
@@ -76,11 +76,11 @@ public class RectangularMaze : IMaze
         Point[] startPositions =
         [
             new Point(1, 1),
-            new Point(Height - 2, 1),   
+            new Point(Height - 2, 1),
             new Point(1, Width - 2),
             new Point(Height - 2, Width - 2)
         ];
-        var startPoint = startPositions[rand.Next(0, startPositions.Length)];
+        var startPoint = startPositions[rand.Next(startPositions.Length)];
         var currentPoint = startPoint;
         var stack = new Stack<Point>();
         do
@@ -115,17 +115,9 @@ public class RectangularMaze : IMaze
     {
         Point point;
         if (a.X == b.X)
-        {
-            if (a.Y < b.Y)
-                point = new Point(a.X, a.Y + 1);
-            else point = new Point(a.X, a.Y - 1);
-        }
+            point = a.Y < b.Y ? new Point(a.X, a.Y + 1) : new Point(a.X, a.Y - 1);
         else
-        {
-            if (a.X < b.X)
-                point = new Point(a.X + 1, a.Y);
-            else point = new Point(a.X - 1, a.Y);
-        }
+            point = a.X < b.X ? new Point(a.X + 1, a.Y) : new Point(a.X - 1, a.Y);
 
         this[point.X, point.Y] = fabric[0].CreateRoom();
         this[point.X, point.Y].IsVisited = true;

@@ -6,4 +6,3 @@ public interface IMaze : IEnumerable<IMazeElement>
     public int Height { get; }
     public int Width { get; }
 }
-
