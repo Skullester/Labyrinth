@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wpOiRfUA018gNLeYF1SKctq27I/iHKrpPGURdONf6OUAxAkkMOnr/YJJCW8wJor40KVUxsVgdTeHzxTF+OMugw==",
+  "dgSpecHash": "bVX32gS1b1wKFSQzJhZNhhyGfgO2txVfxBNX+vct5Ekv7zghjASTrgAqPsX6V1Y9vM9YaDmoinVTQmICbieVMw==",
   "success": true,
   "projectFilePath": "P:\\VS Projects\\Patterns\\Patterns\\Patterns.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mrsam\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\mrsam\\.nuget\\packages\\system.drawing.common\\8.0.5\\system.drawing.common.8.0.5.nupkg.sha512"
+  ],
   "logs": []
 }

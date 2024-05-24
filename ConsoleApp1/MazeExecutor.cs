@@ -18,9 +18,9 @@ class MazeExecutor
         RegisterWriters(maze, formatter);
         PrintWriters();
         var writer = GetMazeWriter();
-        PrintLineWithColor($"Происходит запись на {writer.Name}...", ConsoleColor.White);
+        ConsoleHelper.PrintLineWithColor($"Происходит запись на {writer.Name}...", ConsoleColor.White);
         writer.Write();
-        PrintLineWithColor("Запись завершена!", ConsoleColor.White);
+        ConsoleHelper.PrintLineWithColor("Запись завершена!", ConsoleColor.White);
         Console.ReadKey();
     }
 
@@ -36,14 +36,14 @@ class MazeExecutor
 
     private void PrintAllFormatters()
     {
-        PrintLineWithColor("Выберите способ вывода лабиринта: ", ConsoleColor.White);
-        SetConsoleColor(ConsoleColor.Yellow);
+        ConsoleHelper.PrintLineWithColor("Выберите способ вывода лабиринта: ", ConsoleColor.White);
+        ConsoleHelper.SetConsoleColor(ConsoleColor.Yellow);
 
         foreach (var format in formatters)
         {
             var newSymbols = format.Symbols.Select(x => $"'{x}'");
             var symbols = string.Join(" | ", newSymbols);
-            PrintLine($"{format.Name}: {symbols}");
+            ConsoleHelper.PrintLine($"{format.Name}: {symbols}");
         }
     }
 
@@ -54,10 +54,10 @@ class MazeExecutor
 
     private void PrintWriters()
     {
-        PrintLineWithColor("Куда произвести запись?", ConsoleColor.White);
-        SetConsoleColor(ConsoleColor.Yellow);
+        ConsoleHelper.PrintLineWithColor("Куда произвести запись?", ConsoleColor.White);
+        ConsoleHelper.SetConsoleColor(ConsoleColor.Yellow);
         var names = writers.Select(x => x.Name);
-        PrintLine(string.Join(" | ", names));
+        ConsoleHelper.PrintLine(string.Join(" | ", names));
     }
 
     private void RegisterWriters(IMaze maze, IMazeFormatter formatter)
@@ -72,7 +72,7 @@ class MazeExecutor
 
     private static T FindNamingElementByInput<T>(IEnumerable<T> collection, string errorMessage) where T : INaming
     {
-        SetConsoleColor(ConsoleColor.Cyan);
+        ConsoleHelper.SetConsoleColor(ConsoleColor.Cyan);
         T? element;
         bool isError;
         do
@@ -89,15 +89,14 @@ class MazeExecutor
 
     private static bool CheckError(bool condition, string errorMessage)
     {
-        if (condition)
-            PrintError(errorMessage);
+        if (condition) ConsoleHelper.PrintError(errorMessage);
         return condition;
     }
 
     private static (int, int) InputMazeParameters()
     {
-        PrintLineWithColor($"Введите высоту и ширину лабиринта: \nПример: 15 5", ConsoleColor.White);
-        SetConsoleColor(ConsoleColor.Cyan);
+        ConsoleHelper.PrintLineWithColor($"Введите высоту и ширину лабиринта: \nПример: 15 5", ConsoleColor.White);
+        ConsoleHelper.SetConsoleColor(ConsoleColor.Cyan);
         string[]? input;
         do
         {
@@ -115,18 +114,4 @@ class MazeExecutor
         var isIncorrect = string.IsNullOrWhiteSpace(input?[0]) || input.Length != 2;
         return CheckError(isIncorrect, "Ошибка! Введите данные по примеру");
     }
-
-    private static void SetConsoleColor(ConsoleColor color) => Console.ForegroundColor = color;
-
-    private static void PrintLineWithColor(string text, ConsoleColor newColor, bool saveOldColor = true)
-    {
-        var color = Console.ForegroundColor;
-        SetConsoleColor(newColor);
-        PrintLine(text);
-        if (saveOldColor)
-            SetConsoleColor(color);
-    }
-
-    private static void PrintLine(string text) => Console.WriteLine(text);
-    private static void PrintError(string text) => PrintLineWithColor(text, ConsoleColor.Red);
 }

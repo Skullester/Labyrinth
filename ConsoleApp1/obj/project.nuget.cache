@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "RdHpu0wWNaI5sBNywfFsGXEGTPUJv3SBw7H16XWyQkypn7WHvA+/KCyPrCK/bLaNcNB8l3GsDbDqFil99z0l1A==",
+  "dgSpecHash": "QTan+GR7yAOoPUhvyEvpe+6p/7LbZa0aKmLz6ZXBGcA7GmFqRgeaT1XZVRJA3vEuf5adBx8HaWTlrlpEJ4fe3g==",
   "success": true,
   "projectFilePath": "P:\\VS Projects\\Patterns\\ConsoleApp1\\ConsoleApp1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mrsam\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\mrsam\\.nuget\\packages\\system.drawing.common\\8.0.5\\system.drawing.common.8.0.5.nupkg.sha512"
+  ],
   "logs": []
 }
