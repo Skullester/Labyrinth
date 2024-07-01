@@ -8,8 +8,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a88c4893-3548-45ae-8733-d367d5e8564c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Patterns/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Patterns/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/ConsoleHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/Console/ConsoleHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Fabric/DefaultRoomCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Maze/MazeElement/Room/DefaultRoomCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Fabric/ExitRoomCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Maze/MazeElement/Room/ExitRoomCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Fabric/RoomCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Maze/MazeElement/Room/RoomCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Infrastracture/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Infrastructure/Extensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Interfaces/IMaze.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Maze/IMaze.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Interfaces/IMazeElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Maze/MazeElement/IMazeElement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Interfaces/IMazeFormatter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Formatter/IMazeFormatter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Interfaces/INaming.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Naming/INaming.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Interfaces/IRoom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Maze/MazeElement/Room/IRoom.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Interfaces/IWall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Maze/MazeElement/Wall/IWall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Interfaces/MazeWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Writer/MazeWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Models/Maze/Elements/ExitRoom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Maze/MazeElement/Room/ExitRoom.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Models/Maze/Elements/ExternalWall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Maze/MazeElement/Wall/ExternalWall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Models/Maze/Elements/InternalWall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Maze/MazeElement/Wall/InternalWall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Models/Maze/Elements/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Maze/MazeElement/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Models/Maze/Elements/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Maze/MazeElement/Room/Room.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Models/Maze/RectangularMaze.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Maze/RectangularMaze.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Models/Writer/ConsoleMazeWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Writer/ConsoleMazeWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Models/Writer/DefaultMazeFormatter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Formatter/DefaultMazeFormatter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Models/Writer/FileMazeWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Writer/FileMazeWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Models/Writer/WeirdMazeFormatter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Formatter/WeirdMazeFormatter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Models/Writer/Writer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Writer/Writer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
@@ -133,7 +158,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;rider.code.cleanup.on.save.profile&quot;: &quot;Built-in: Reformat Code&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -199,6 +224,11 @@
       <workItem from="1716566042309" duration="8794000" />
       <workItem from="1716589200905" duration="69000" />
       <workItem from="1717242382828" duration="681000" />
+      <workItem from="1718228241511" duration="1000" />
+      <workItem from="1719347917016" duration="393000" />
+      <workItem from="1719845330479" duration="532000" />
+      <workItem from="1719845949010" duration="1376000" />
+      <workItem from="1719847520513" duration="2554000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,4 @@
-﻿using MazePrinter;
-
-namespace ConsoleApp1;
+﻿namespace ConsoleApp1;
 
 public class Program
 {
