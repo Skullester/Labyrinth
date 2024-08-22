@@ -10,7 +10,7 @@ class MazeExecutor
 
     public void Start()
     {
-        var (height, width) = InputMazeParameters();
+        var (height, width) = GetMazeParameters();
         var maze = RectangularMaze.GetMaze(height, width);
         RegisterFormatters();
         PrintAllFormatters();
@@ -93,7 +93,15 @@ class MazeExecutor
         return condition;
     }
 
-    private static (int, int) InputMazeParameters()
+    private static (int, int) GetMazeParameters()
+    {
+        var input = InputMazeParameters();
+        var sizes = input!.Select(int.Parse)
+            .ToArray();
+        return sizes.ParseArrayToTuple();
+    }
+
+    private static string[]? InputMazeParameters()
     {
         ConsoleHelper.PrintLineWithColor($"Введите высоту и ширину лабиринта: \nПример: 15 5", ConsoleColor.White);
         ConsoleHelper.SetConsoleColor(ConsoleColor.Cyan);
@@ -104,9 +112,7 @@ class MazeExecutor
                 .Split();
         } while (CheckInput(input));
 
-        var sizes = input!.Select(int.Parse)
-            .ToArray();
-        return sizes.ParseArrayToTuple();
+        return input;
     }
 
     private static bool CheckInput(string[]? input)

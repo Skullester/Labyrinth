@@ -8,31 +8,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a88c4893-3548-45ae-8733-d367d5e8564c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/Patterns.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/Patterns.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/Patterns.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/Patterns.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Patterns/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Patterns/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/MazeExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/MazeExecutor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ref/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ref/ConsoleApp1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/refint/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/refint/ConsoleApp1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/bin/Debug/net8.0/Patterns.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/bin/Debug/net8.0/Patterns.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/bin/Debug/net8.0/Patterns.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/bin/Debug/net8.0/Patterns.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Formatter/DefaultMazeFormatter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Formatter/DefaultMazeFormatter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/Formatter/WeirdMazeFormatter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/Formatter/WeirdMazeFormatter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/ref/Patterns.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/ref/Patterns.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/refint/Patterns.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/refint/Patterns.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Debug/net8.0/Patterns.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/obj/Patterns.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Patterns.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/obj/Patterns.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/Patterns.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,6 +225,12 @@
       <workItem from="1719845949010" duration="1376000" />
       <workItem from="1719847520513" duration="2554000" />
       <workItem from="1720014190526" duration="630000" />
+      <workItem from="1720386653100" duration="1426000" />
+      <workItem from="1720388096132" duration="95000" />
+      <workItem from="1721737554439" duration="674000" />
+      <workItem from="1722802139233" duration="691000" />
+      <workItem from="1723050512630" duration="1243000" />
+      <workItem from="1724063740795" duration="349000" />
     </task>
     <servers />
   </component>

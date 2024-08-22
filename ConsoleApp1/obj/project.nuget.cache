@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "QTan+GR7yAOoPUhvyEvpe+6p/7LbZa0aKmLz6ZXBGcA7GmFqRgeaT1XZVRJA3vEuf5adBx8HaWTlrlpEJ4fe3g==",
+  "dgSpecHash": "dG0fJOeEiZ8=",
   "success": true,
   "projectFilePath": "P:\\VS Projects\\Patterns\\ConsoleApp1\\ConsoleApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mrsam\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
-    "C:\\Users\\mrsam\\.nuget\\packages\\system.drawing.common\\8.0.5\\system.drawing.common.8.0.5.nupkg.sha512"
+    "C:\\Users\\mrsam\\.nuget\\packages\\system.drawing.common\\8.0.5\\system.drawing.common.8.0.5.nupkg.sha512",
+    "C:\\Users\\mrsam\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.5\\microsoft.netcore.app.ref.8.0.5.nupkg.sha512",
+    "C:\\Users\\mrsam\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.5\\microsoft.windowsdesktop.app.ref.8.0.5.nupkg.sha512",
+    "C:\\Users\\mrsam\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.5\\microsoft.aspnetcore.app.ref.8.0.5.nupkg.sha512",
+    "C:\\Users\\mrsam\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.5\\microsoft.netcore.app.host.win-x64.8.0.5.nupkg.sha512"
   ],
   "logs": []
 }
