@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dG0fJOeEiZ8=",
+  "dgSpecHash": "v9j02hgH/I4=",
   "success": true,
-  "projectFilePath": "P:\\VS Projects\\Patterns\\ConsoleApp1\\ConsoleApp1.csproj",
+  "projectFilePath": "H:\\Учёба\\4\\ПП\\Labyrinth\\ConsoleApp1\\ConsoleApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mrsam\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
     "C:\\Users\\mrsam\\.nuget\\packages\\system.drawing.common\\8.0.5\\system.drawing.common.8.0.5.nupkg.sha512",
